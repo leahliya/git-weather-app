@@ -1,0 +1,72 @@
+
+<!-- <section class="7DForecast-container">
+
+
+<h1>Here is the Weather 5 Days Forecast in<br> {{ city }} </h1>
+<button ui-sref="weather"> VIEW TODAY FORECAST </button>
+
+<P>“My mom says that when it rains you never feel like you should be anywhere but home.” 
+    ― Elise Broach, Shakespeare's Secret</P>
+</section> -->
+
+
+<section class="forecast-container">
+        <div id="form-wrap" class="wrap">
+          <form autocomplete="on">
+          <input ng-model="name" type="text" placeholder="Enter Location To Search">
+          <button id="search_submit" class="main-CTA" ng-click="getForecast(name)"></button>
+          </form>
+        </div>
+      
+              <div class="card-container" id="hidden">
+                  <div class="forecast-card" ng-repeat="day in forecast">
+                      <p>{{day.dt * 1000 | date: 'longDate'}}</p>
+                      <i class="wi wi-owm-{{day.weather[0].id}}" style="float: right"></i>
+                      <p id="desc">{{day.weather[0].description}}</p>
+                      <div class="temp">
+                          <p id="high">{{day.temp.max | number: 0}}°</p>
+                          <p>/ </p>
+                          <p id="low">{{day.temp.min | number: 0}}°</p>
+                      </div>
+                      <p>Wind Speed: {{day.speed | number: 0}} mph</p>
+                      <p>Humidity: {{day.humidity}}%</p>
+                  </div>
+              </div>
+          <div class="currentWeather">
+              <button class="flash-CTA" ng-click="currForecast()">My Local Forecast</button>
+          </div>
+          <p>“My mom says that when it rains you never feel like you should be anywhere but home.” 
+                ― Elise Broach, Shakespeare's Secret</p>
+      <!-- <img class="loading" src="https://24.media.tumblr.com/f678ce38eb896bc1d4aaa911958af087/tumblr_n2eccv6Dev1rgpzseo1_1280.gif" alt="" />    <div class="card-container" id="currHidden">
+              <div class="forecast-card" ng-repeat="day in myFore">
+                  <p>{{day.dt * 1000 | date: 'longDate'}}</p>
+                  <i class="wi wi-owm-{{day.weather[0].id}}" style="float: right"></i>
+                  <p id="desc">{{day.weather[0].description}}</p>
+                  <div class="temp">
+                      <p id="high">{{day.temp.max | number: 0}}°</p>
+                      <p>/ </p>
+                      <p id="low">{{day.temp.min | number: 0}}°</p>
+                  </div>
+                  <p>Wind Speed: {{day.speed | number: 0}} mph</p>
+                  <p>Humidity: {{day.humidity}}%</p>
+              </div>
+          </div>-->
+      </section>
+      
+      
+      
+      <!-- <div class="widget">
+      <iframe src="https://embed.windyty.com/?45.070,-109.644,8,temp,menu,message,ip,metric.wind.mph,metric.temp.F" width="500" height="500" frameborder="0"></iframe>
+      </div> -->
+      
+      <!-- Maybe make 5dayForecast a carousel between the days?
+      Or a side by side of 5 panels?
+      Hamburger MEnu instead of header?
+      Any way to incorporate parallax?
+      Animated Icons from Spencer?
+      Any other Animations to fit in?
+      HEader or no for about page?
+      finish styling about page?
+      other links for social icons?
+      Add one more directive, for reused HTML? The Weather Card HTML?
+      make new route for just video and tag line? then have that slide up to display home weather page?-->

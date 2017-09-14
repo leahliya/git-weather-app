@@ -1,0 +1,22 @@
+<section class="about-container">
+    
+        <div class="about-image">
+            <img src="views/images/images.jpg" alt="About Page Image">
+        </div>
+    
+        <ui-view class="about-inner-right">
+    
+        <div class="about-inner-intro">
+            
+            Enter your city: </br>
+            <input type="text" name="inputbox" ng-model="location"><P>
+            <input type="button" name="button" ui-sref="weather({name: location})" value="FIND THE WEATHER">
+            <!-- <div ng-repeat="weath in weather"> -->
+                <!-- {{ weather.name }} -->
+            <p>“You are the sky. Everything else – it’s just the weather."</br>― Pema Chödrön</p> 
+         
+            </div>
+        </ui-view>
+    
+    </section>
+    
