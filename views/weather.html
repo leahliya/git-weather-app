@@ -1,22 +1,26 @@
-<section class="weather-container" ng-style="{'background-image':'url({{trip.image}})', 'background-position': 'center center'}">
-<!-- <p>“Just for the record, the weather today is calm and sunny, but the air is full of bullshit.” 
-        </br> ― Chuck Palahniuk</p> -->
-        
-        <h1 ng-model="location">Weather in {{weather.name}}</h1>
-        <i class="wi wi-owm-{{weather.weather[0].icon}}" style="float: right"></i>
-        <!-- <div class="temp"> -->
-           
-           <p>Temperature: {{weather.main.temp | number: 0}}°</p>
-           <p>Hight Temperature: {{weather.main.temp_max | number: 0}}°</p>
-           <p>Low Temperature: {{weather.main.temp_min | number: 0}}°</p>
-        <!-- </div> -->
-           <p>Wind: {{weather.wind.speed | number: 0}} mph</p>
-           <p>Humidity: {{weather.main.humidity}}%</p>            
-        <p>//</p>
+<section class="weather" ng-style="{'background-image':'url({{trip.image}})', 'background-position': 'center center'}">
+  <h1 ng-model="location">Weather in {{weather.name}}</h1>
+   <div class="forecast-card">
+    <!-- <i class="wi wi-owm-{{weather.weather[0].icon}}" style="float: right"></i> -->
+    <div class="tempBox">
+      <p>Temperature: {{weather.main.temp | number: 0}}°</p>
+      <p>Hight Temperature: {{weather.main.temp_max | number: 0}}°</p>
+      <p>Low Temperature: {{weather.main.temp_min | number: 0}}°</p>
+      <p>Wind: {{weather.wind.speed | number: 0}} mph</p>
+      <p>Humidity: {{weather.main.humidity}}%</p>            
+    </div>
+   </div>
   <!-- <button><a ui-sref='fiveDaysForecast({location: weather.name})'> 5 DAYS FORECAST </button> -->
         <!-- <input type="text" name="inputbox" ng-model="location"><P> -->
-        <input type="button" class="button" ui-sref='fiveDaysForecast({location: weather.name})' value="5 DAYS  FORECAST"></button>
-        <p>“Just for the record, the weather today is calm and sunny, but the air is full of bullshit.” 
-        </br> ― Chuck Palahniuk</p>
-
+        <div class="request-intro">
+         <div class="request-button">
+          <input type="button" class="btn btn-primary btn-lg" ui-sref='fiveDaysForecast({location: weather.name})' value="5 DAYS  FORECAST"></button>
+          </div>
+        </div> 
+        <!--<div class='quoteholder'>
+          <div class="new-quote"> 
+            <p id="quote">“Just for the record, the weather today is calm and sunny, but the air is full of bullshit.” 
+            </br> ― Chuck Palahniuk</p>
+          </div>
+        </div> -->
 </section>

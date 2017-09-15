@@ -1,22 +1,19 @@
-<section class="about-container">
+<section class="about-container"> 
+<ui-view class="about-inner-right">
     
-        <!-- <div class="about-image">
-            <img src="views/images/images.jpg" alt="About Page Image">
-        </div> -->
-    
-        <ui-view class="about-inner-right">
-    
-        <div class="about-inner-intro">
-            
-            Enter City: </br>
-            <input type="text" name="inputbox" ng-model="location"><P>
-            <input type="button" class="button" ui-sref="weather({name: location})" value="ONE DAY FORECAST"></button>
-            <!-- <div ng-repeat="weath in weather"> -->
-                <!-- {{ weather.name }} -->
-            <p>“You are the sky. Everything else – </br>it’s just the weather."</br>― Pema Chödrön</p> 
-         
-            </div>
-        </ui-view>
-    
-    </section>
+<div class="request-intro">
+  <div class="request-box">       
+   <h1>Enter City: </h1>
+   <input type="text" id='inbox' name="inputbox" ng-model="location"><P>
+   <input type="button" class="btn btn-primary btn-lg" ui-sref="weather({name: location})" value="ONE DAY FORECAST"></button>
+</div>
+</div>
+ 
+<!-- <div class='quoteholder'>
+  <div class="new-quote">     
+     <p id="quote">“You are the sky. Everything else – </br>it’s just the weather."</br>― Pema Chödrön</p> 
+  </div>
+ </div> -->
+</ui-view>
+<section>
     
