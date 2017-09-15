@@ -2,11 +2,14 @@
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: inline-block;
-    align-item: center;
+    align-items: center;
+    /* padding: 35px; */
+    /* margin: 25px; */
+
 }
 body {
     line-height: 1;
-    
+    background-color: #868BE6;
     align-items: center;
 }
 ol, ul {
@@ -14,76 +17,98 @@ ol, ul {
     /* display: inline-flex;
     padding: 25px;
     margin-left: 45; */
-
-    
+   
 }
 .nav{
     display: inline-flex;
     white-space: nowrap;
-    margin: 35px;
-    padding-left: 25px;
+    margin: 15px;
+    padding-left: 15px;
     text-align: right;
     margin-left: 15;
 }
 
     /* .home-page-top-container {
-        width: 100%;
-        height: 40vh;
-        min-height: 400px;
-        position: relative;
-        background: url('../../img/BG-Img.jpg') center no-repeat;
-        background-size: cover;
-        text-align: center;
-        display: flex;
         flex-direction: column;
     }
      */
     .home-page-top-container {
         min-height: 400px;
-        position: relative;
-        width: 100%;
-        height: 40vh;
-        padding-top: 15px;
-        margin-bottom: 10px;
-        background-color: #9CE7CF;
-        border: medium solid #064A35;
+        /* position: relative; */
+        /* width: 100%;  */
+        /* height: 40vh; */
+        /* padding-top: 25px; */
+        /* margin-bottom: 20px; */
+        /* background-color: #9CE7CF; */
+        border: 4px solid #06011B;
         border-radius: 25px;
         background: url('/views/images/luis-poletti-17300 (1).jpg') center no-repeat;
-        text-align: center;
-        display: flex;
         flex-direction: column;
+        width: 100%;
    }
-  .home-page-top-containe, nav, ul {
+  .home-page-top-container, nav, ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    text-align: right;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
+    padding-top: 30px;  
     
 }
 
-h1, div, nav, ul, p, l, form, section{
+h1, div, nav, ul, p, li, form, section{
     text-align: center;
     font-weight: 600;
-    color: #000E03;
+    color: #07031A;
 }
 
 form{
     align-items: center;
     height: 800px;
     width: 1200px;
-    border: medium solid red;
+    /* border: medium solid red; */
 }
 .about-inner-intro{
     align-items: center;
 }
 p{
-    font-size: 28px;
+    font-size: 18px;
     border: medium solid #000C0A 3px;
+    /* border: 3px border-style solid border-color #DC1A5D; */
 }
 .about-image{
     align-items: left; 
 }
+li{
+    background-color: white;
+    padding: 10px;
+    border: 2px;
+}
+#cont-container{
+    height: 300px;
+    width: 400;
+    border: solid 3px color red;
+}
+
+.intro-text {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #2C3ADC;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-content: center;
+    font-style: italic;
+}
+/* #button {
+    margin-top: 20px;
+    line-height: 60px;
+    font-weight: bold;
+    padding: 0 40px;
+    background: salmon;
+    border: none;
+  }
+  button:hover {
+    background: lightsalmon;
+  }  */

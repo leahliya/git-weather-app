@@ -11,10 +11,10 @@ angular.module('weatherApp', ['ui.router'])
              templateUrl: "../views/weather.html",
              controller: "weatherCtrl"
          })
-         .state('5DaysForecast',{
-             url:'/5 days Forecat',
-             templateUrl: "../views/5DaysForecast.html",
-             controller: "5DaysForecastCtrl"
+         .state('fiveDaysForecast',{
+             url:'/fiveDaysForecast/:location',
+             templateUrl: "../views/fiveDay.html",
+             controller: "fiveDayCtrl"
          })
          .state('contact',{
             url:'/contact',
