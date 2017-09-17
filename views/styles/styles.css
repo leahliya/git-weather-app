@@ -15,10 +15,6 @@ body {
 }
 ol, ul {
     list-style: none;
-    /* display: inline-flex;
-    padding: 25px;
-    margin-left: 45; */
-   
 }
 .nav{
     display: inline-flex;
@@ -44,21 +40,18 @@ ol, ul {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
-    /* padding-top: 30px;   */
     
 }
 
 div, nav, ul, p, li, form, section{
     text-align: center;
     font-weight: 600;
-    /* color: #07031A; */
 }
 
 form{
     align-items: center;
     height: 800px;
     width: 1200px;
-    /* border: medium solid red; */
 }
 .about-inner-intro{
     align-items: center;
@@ -66,7 +59,6 @@ form{
 p{
     font-size: 18px;
     border: medium solid #000C0A 3px;
-    /* border: 3px border-style solid border-color #DC1A5D; */
 }
 .about-image{
     align-items: left; 
@@ -92,21 +84,7 @@ li{
     align-content: center;
     font-style: italic;
 }
-/* #button {
-    margin-top: 20px;
-    line-height: 60px;
-    font-weight: bold;
-    padding: 0 40px;
-    background: salmon;
-    border: none;
-  }
-  button:hover {
-    background: lightsalmon;
-  }  */
-  .waterfall{
-      float: top;
-      border-color: red;
-  }
+
   .forecast-card{
       /* display: flex; */
       /* flex-direction: column; */
@@ -114,12 +92,7 @@ li{
       display: inline-block; 
       /* border-color: red;     */
   }
-/* .forecast-card{
-    border:  3px border-style solid color red; 
-    background: lightblue;
-    color: white;
 
-} */
 #footer{
     background-color: white;
     color: blue;
@@ -220,4 +193,7 @@ h1{
     font-style: italic;
     color: blue;
     font-weight: 800px;
+}
+.contact-container{
+    align-items: center;
 }

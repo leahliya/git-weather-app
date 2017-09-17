@@ -3,7 +3,7 @@ angular.module('weatherApp').controller('mainCtrl', function($scope) {
     
     $scope.date = new Date();
     $scope.test = "main controller test";
-    
+
 });
 
 
