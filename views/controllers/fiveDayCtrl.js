@@ -8,7 +8,7 @@ angular.module('weatherApp')
             var forecast = result.list;
             var fivedays = [];
             // var day = forecast[0].dt_txt.substring(1, 8);
-            var day;
+            var day = forecast[0].dt_txt.substring(1, 10);
         for (var i = 0; i < forecast.length; i++) {
             console.log(forecast[i].dt_txt.substring(1, 10) !== day);
             if (forecast[i].dt_txt.substring(1, 10) !== day){

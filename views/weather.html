@@ -1,22 +1,29 @@
 <section class="weather" ng-style="{'background-image':'url({{trip.image}})', 'background-position': 'center center'}">
-  <h1 ng-model="location">Weather in {{weather.name}}</h1>
+  <div id="bold-date">
+    <h1 ng-model="location">Weather in {{weather.name}}</h1>
+  </div>
    <div class="forecast-card">
     <!-- <i class="wi wi-owm-{{weather.weather[0].icon}}" style="float: right"></i> -->
     <div class="tempBox">
-      <p>Temperature: {{weather.main.temp | number: 0}}°</p>
-      <p>Hight Temperature: {{weather.main.temp_max | number: 0}}°</p>
-      <p>Low Temperature: {{weather.main.temp_min | number: 0}}°</p>
-      <p>Wind: {{weather.wind.speed | number: 0}} mph</p>
+      <p>{{weather.weather[0].main}}</p>
+      <i class="wi wi-owm-{{weather.weather[0].icon}" style="float: right"></i>
+      <p>Temperature: {{weather.main.temp | number: 0}}°F</p>
+      <p>Hight Temperature: {{weather.main.temp_max | number: 0}}°F</p>
+      <p>Low Temperature: {{weather.main.temp_min | number: 0}}°F</p>
+      <p>Wind: {{weather.wind.speed | number: 0}}mph</p>
       <p>Humidity: {{weather.main.humidity}}%</p>            
     </div>
    </div>
   <!-- <button><a ui-sref='fiveDaysForecast({location: weather.name})'> 5 DAYS FORECAST </button> -->
-        <!-- <input type="text" name="inputbox" ng-model="location"><P> -->
-        <div class="request-intro">
+        
+    <!-- <input type="text" name="inputbox" ng-model="location"><P> -->
+   
+        <div id="Dayreq">
          <div class="request-button">
           <input type="button" class="btn btn-primary btn-lg" ui-sref='fiveDaysForecast({location: weather.name})' value="5 DAYS  FORECAST"></button>
-          </div>
-        </div> 
+         </div>
+        </div>
+     
         <!--<div class='quoteholder'>
           <div class="new-quote"> 
             <p id="quote">“Just for the record, the weather today is calm and sunny, but the air is full of bullshit.” 
