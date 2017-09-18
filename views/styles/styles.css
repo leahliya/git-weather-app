@@ -3,9 +3,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: inline-block;
     align-items: center;
-    /* padding: 35px; */
-    /* margin: 25px; */
-
 }
 body {
     line-height: 1;

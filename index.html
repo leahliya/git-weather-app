@@ -23,9 +23,11 @@
      <div id="bold-date">{{date | date:'HH:mm:ss'}}</div>
      <nav-directive></nav-directive>          
        <h1 class="intro-text">Local Weather</h1>
-       <!-- {{lat}} -->
-<!--Local weather>   
+       
+<!--Local weather>  
+   {{lat}} 
     <local weather> -->
+{{Math.round(position.coords.latitude)}} {{Math.round(position.coords.longitude)}}
     </header>
  </section>   
     <ui-view></ui-view>        
@@ -34,13 +36,13 @@
 </body>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
-    <script src="./app.js"></script>
-    <script src="./mainCtrl.js"></script>
-    <script src="./weatherServ.js"></script>
-    <script src="./fiveDaysServ.js"></script>
-    <script src="./views/controllers/aboutCtrl.js"></script>
-    <script src="./views/controllers/weatherCtrl.js"></script>
-    <script src="./views/controllers/fiveDayCtrl.js"></script>
-    <script src="./custom/navbar/nav.js"></script>
-    <script src="./custom/footer/footer.js"></script>
+    <script src="/app.js"></script>
+    <script src="/mainCtrl.js"></script>
+    <script src="/weatherServ.js"></script>
+    <script src="/fiveDaysServ.js"></script>
+    <script src="/views/controllers/aboutCtrl.js"></script>
+    <script src="/views/controllers/weatherCtrl.js"></script>
+    <script src="/views/controllers/fiveDayCtrl.js"></script>
+    <script src="/custom/navbar/nav.js"></script>
+    <script src="/custom/footer/footer.js"></script>
 </html>

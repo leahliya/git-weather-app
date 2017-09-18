@@ -8,8 +8,8 @@
       <p>{{weather.weather[0].main}}</p>
       <i class="wi wi-owm-{{weather.weather[0].icon}" style="float: right"></i>
       <p>Temperature: {{weather.main.temp | number: 0}}°F</p>
-      <p>Hight Temperature: {{weather.main.temp_max | number: 0}}°F</p>
-      <p>Low Temperature: {{weather.main.temp_min | number: 0}}°F</p>
+      <p>High: {{weather.main.temp_max | number: 0}}°F</p>
+      <p>Low: {{weather.main.temp_min | number: 0}}°F</p>
       <p>Wind: {{weather.wind.speed | number: 0}}mph</p>
       <p>Humidity: {{weather.main.humidity}}%</p>            
     </div>
